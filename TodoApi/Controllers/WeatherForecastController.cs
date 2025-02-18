@@ -6,10 +6,10 @@ namespace TodoApiDeploy2025.Controllers;
 [Route("[controller]")]
 public class WeatherForecastController : ControllerBase
 {
-    public List<string> Summaries = new List<string>
+    private static readonly IReadOnlyList<string> Summaries = new List<string>
     {
         "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-    };
+    }.AsReadOnly();
 
     private readonly ILogger<WeatherForecastController> _logger;
 
