@@ -543,11 +543,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Dev\\TodoApiDeploy2025\\TodoApiDeploy2025\\TodoApiDeploy2025.csproj",
-      "projectName": "TodoApiDeploy2025",
-      "projectPath": "D:\\Dev\\TodoApiDeploy2025\\TodoApiDeploy2025\\TodoApiDeploy2025.csproj",
+      "projectUniqueName": "D:\\Dev\\TodoApiDeploy2025\\TodoApi\\TodoApi.csproj",
+      "projectName": "TodoApi",
+      "projectPath": "D:\\Dev\\TodoApiDeploy2025\\TodoApi\\TodoApi.csproj",
       "packagesPath": "C:\\Users\\nevavo\\.nuget\\packages\\",
-      "outputPath": "D:\\Dev\\TodoApiDeploy2025\\TodoApiDeploy2025\\obj\\",
+      "outputPath": "D:\\Dev\\TodoApiDeploy2025\\TodoApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\DevExpress 22.1\\Components\\Offline Packages",

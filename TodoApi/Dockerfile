@@ -12,19 +12,19 @@ EXPOSE 8081
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["TodoApiDeploy2025/TodoApiDeploy2025.csproj", "TodoApiDeploy2025/"]
-RUN dotnet restore "./TodoApiDeploy2025/TodoApiDeploy2025.csproj"
+COPY ["TodoApi/TodoApi.csproj", "TodoApi/"]
+RUN dotnet restore "./TodoApi/TodoApi.csproj"
 COPY . .
-WORKDIR "/src/TodoApiDeploy2025"
-RUN dotnet build "./TodoApiDeploy2025.csproj" -c $BUILD_CONFIGURATION -o /app/build
+WORKDIR "/src/TodoApi"
+RUN dotnet build "./TodoApi.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 # This stage is used to publish the service project to be copied to the final stage
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish "./TodoApiDeploy2025.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "./TodoApi.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
 
 # This stage is used in production or when running from VS in regular mode (Default when not using the Debug configuration)
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "TodoApiDeploy2025.dll"]
+ENTRYPOINT ["dotnet", "TodoApi.dll"]

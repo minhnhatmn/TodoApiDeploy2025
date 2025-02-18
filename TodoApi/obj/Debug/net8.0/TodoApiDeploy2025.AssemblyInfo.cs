@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TodoApiDeploy2025")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+97d3ef423826b98f287a07af760f7fe49751521d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6e1bab70887c84f78f03aee0317afe34440e4844")]
 [assembly: System.Reflection.AssemblyProductAttribute("TodoApiDeploy2025")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TodoApiDeploy2025")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+6dV9rPDQ10=",
+  "dgSpecHash": "G/sW3VRny2A=",
   "success": true,
-  "projectFilePath": "D:\\Dev\\TodoApiDeploy2025\\TodoApiDeploy2025\\TodoApiDeploy2025.csproj",
+  "projectFilePath": "D:\\Dev\\TodoApiDeploy2025\\TodoApi\\TodoApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nevavo\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\nevavo\\.nuget\\packages\\microsoft.openapi\\1.6.14\\microsoft.openapi.1.6.14.nupkg.sha512",
